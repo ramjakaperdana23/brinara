@@ -138,7 +138,7 @@
             <img src="./images/bg_1.jpg" class="d-block w-100" alt="bg-1" />
             <div class="carousel-text">
               <h2 class="brinara-subheading">Brinara</h2>
-              <p>Birthday Cake</p>
+              <p class="font-descriptive">Birthday Cake</p>
             </div>
             <div class="overlay"></div>
           </div>
@@ -146,7 +146,7 @@
             <img src="./images/bg_2.jpg" class="d-block w-100" alt="bg-2" />
             <div class="carousel-text">
               <h2 class="brinara-subheading">Brinara</h2>
-              <p>Wedding Cake</p>
+              <p class="font-descriptive">Wedding Cake</p>
             </div>
             <div class="overlay"></div>
           </div>
@@ -158,7 +158,7 @@
             />
             <div class="carousel-text">
               <h2 class="brinara-subheading">Brinara</h2>
-              <p>Brinara Special Snacks</p>
+              <p class="font-descriptive">Brinara Special Snacks</p>
             </div>
             <div class="overlay"></div>
           </div>
@@ -166,7 +166,7 @@
             <img src="./images/bg_4.jpg" class="d-block w-100" alt="bg-4" />
             <div class="carousel-text">
               <h2 class="brinara-subheading">Brinara</h2>
-              <p>Brinara Special Pastries</p>
+              <p class="font-descriptive">Brinara Special Pastries</p>
             </div>
             <div class="overlay"></div>
           </div>
@@ -264,12 +264,9 @@
         <div class="container">
           <div class="row d-md-flex">
             <div class="col-md-9">
-              <div
-                class="row d-md-flex align-items-center"
-                style="display: grid"
-              >
+              <div class="row d-md-flex align-items-center">
                 <div
-                  class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate"
+                  class="col-3 col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate"
                 >
                   <div class="block-18">
                     <div class="text">
@@ -279,17 +276,17 @@
                   </div>
                 </div>
                 <div
-                  class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate"
+                  class="col-3 col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate"
                 >
                   <div class="block-18">
                     <div class="text">
                       <strong class="number" data-number="25">0</strong>
-                      <span>Cakes,snacks/Variety</span>
+                      <span>Cakes,Snacks</span>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate"
+                  class="col-3 col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate"
                 >
                   <div class="block-18">
                     <div class="text">
@@ -299,7 +296,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate"
+                  class="col-3 col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate"
                 >
                   <div class="block-18">
                     <div class="text">
@@ -477,14 +474,25 @@
                     <ul>
                       <li>
                         Kue pernikahan adalah simbol kesatuan dan kebahagiaan
-                        pasangan. Kue ini biasanya berbentuk bertingkat dan
-                        dihias dengan berbagai macam ornamen. Anda bisa memilih
-                        kue pernikahan sesuai dengan tema pernikahan Anda. Pesan
-                        kue pernikahan Anda sekarang juga dan jadikan hari
-                        spesial Anda semakin berkesan!
+                        pasangan. Kue ini <span id="dots1">...</span>
+                        <span class="more" id="more1"
+                          >biasanya berbentuk bertingkat dan dihias dengan
+                          berbagai macam ornamen. Anda bisa memilih kue
+                          pernikahan sesuai dengan tema pernikahan Anda. Pesan
+                          kue pernikahan Anda sekarang juga dan jadikan hari
+                          spesial Anda semakin berkesan!</span
+                        >
+                        <br />
                       </li>
                     </ul>
                   </div>
+                  <button
+                    class="btn btn-danger"
+                    onclick="myFunction('dots1','more1','myBtn1')"
+                    id="myBtn1"
+                  >
+                    Read more
+                  </button>
                 </div>
               </div>
 
@@ -517,12 +525,21 @@
                     <ul>
                       <li>
                         Kue pernikahan bertema kartun bisa dihias dengan
-                        berbagai macam cara, mulai dari karakter kartun yang
-                        dicetak di atas kue hingga karakter kartun yang dibuat
-                        dari fondant.
+                        berbagai macam cara, mulai <span id="dots2">...</span
+                        ><span class="more" id="more2"
+                          >dari karakter kartun yang dicetak di atas kue hingga
+                          karakter kartun yang dibuat dari fondant.
+                        </span>
                       </li>
                     </ul>
                   </div>
+                  <button
+                    class="btn btn-danger"
+                    onclick="myFunction('dots2','more2','myBtn2')"
+                    id="myBtn2"
+                  >
+                    Read more
+                  </button>
                 </div>
               </div>
               <!-- 3 -->
@@ -584,12 +601,22 @@
                     <ul>
                       <li>
                         Jajanan pasar kami dibuat dengan menggunakan bahan-bahan
-                        berkualitas dan resep tradisional yang telah
-                        turun-temurun. Kami selalu mengutamakan cita rasa yang
-                        autentik dan lezat.
+                        berkualitas dan resep tradisional
+                        <span id="dots4">...</span
+                        ><span class="more" id="more4"
+                          >yang telah turun-temurun. Kami selalu mengutamakan
+                          cita rasa yang autentik dan lezat.
+                        </span>
                       </li>
                     </ul>
                   </div>
+                  <button
+                    class="btn btn-danger"
+                    onclick="myFunction('dots4','more4','myBtn4')"
+                    id="myBtn4"
+                  >
+                    Read more
+                  </button>
                 </div>
               </div>
 
@@ -622,16 +649,26 @@
                     <ul>
                       <li>
                         Kue stroberi yang lembut dan lezat dengan perpaduan rasa
-                        manis dan asam dari buah stroberi segar.cocok untuk
-                        berbagai acara, seperti ulang tahun, pesta, atau sekadar
-                        camilan manis. Kue ini terbuat dari bahan-bahan
-                        berkualitas tinggi, seperti tepung terigu, mentega,
-                        telur, dan buah stroberi segar. Rasa manis dan asam dari
-                        buah stroberi berpadu sempurna dengan tekstur kue yang
-                        lembut dan moist.
+                        manis dan asam dari buah stroberi segar.
+                        <span id="dots5">...</span
+                        ><span class="more" id="more5"
+                          >cocok untuk berbagai acara, seperti ulang tahun,
+                          pesta, atau sekadar camilan manis. Kue ini terbuat
+                          dari bahan-bahan berkualitas tinggi, seperti tepung
+                          terigu, mentega, telur, dan buah stroberi segar. Rasa
+                          manis dan asam dari buah stroberi berpadu sempurna
+                          dengan tekstur kue yang lembut dan moist.
+                        </span>
                       </li>
                     </ul>
                   </div>
+                  <button
+                    class="btn btn-danger"
+                    onclick="myFunction('dots5','more5','myBtn5')"
+                    id="myBtn5"
+                  >
+                    Read more
+                  </button>
                 </div>
               </div>
               <!-- 6 -->
@@ -664,11 +701,21 @@
                       <li>
                         Kue brownies kukus yang lembut dan lezat dengan rasa
                         cokelat yang manis dan legit. Brownies panggang yang
-                        renyah di luar dan lembut di dalam dengan rasa cokelat
-                        yang kaya. Cocok untuk camilan atau dessert.
+                        renyah di luar <span id="dots6">...</span
+                        ><span class="more" id="more6">
+                          dan lembut di dalam dengan rasa cokelat yang kaya.
+                          Cocok untuk camilan atau dessert.
+                        </span>
                       </li>
                     </ul>
                   </div>
+                  <button
+                    class="btn btn-danger"
+                    onclick="myFunction('dots6','more6','myBtn6')"
+                    id="myBtn6"
+                  >
+                    Read more
+                  </button>
                 </div>
               </div>
             </div>
@@ -1037,83 +1084,93 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- Akhir Faq -->
-    <!-- FORM KONTAK -->
-    <section id="form-kontak" class="container">
-      <div class="row d-flex">
-        <div class="col-md-7 ftco-animate makereservation p-4 px-md-5 pb-md-5">
-          <div class="heading-section ftco-animate text-center">
-            <span class="subheading">Order</span>
-            <br />
-            <h2 class="mb-4 text-dark" style="font-size: 2rem">Your Cake</h2>
-            <ul
-              class="ftco-footer-social list-unstyled float-md-left float-lft mt-3"
-            >
-              <li class="ftco-animate">
-                <a href="#"><span class="fa fa-facebook"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="fa fa-twitter"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="fa fa-instagram"></span></a>
-              </li>
-            </ul>
-          </div>
-          <form
-            target="_blank"
-            action="https://formsubmit.co/bbda2e33df65a6d1b1cbd316fdd55220"
-            method="POST"
+
+      <!-- Akhir Faq -->
+      <!-- FORM KONTAK -->
+      <section id="form-kontak" class="container">
+        <div class="row d-flex">
+          <div
+            class="col-md-7 ftco-animate makereservation p-4 px-md-5 pb-md-5"
           >
-            <div class="modal-body mx-3">
-              <div class="mb-3">
-                <label for="email" class="form-label">Alamat Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  class="form-control"
-                  placeholder="Email"
-                  name="email"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama</label>
-                <input
-                  type="text"
-                  id="Name"
-                  class="form-control"
-                  placeholder="Nama"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="Message" class="form-label">Detail Pesan</label>
-                <textarea
-                  class="form-control"
-                  id="Message"
-                  name="message"
-                  rows="10"
-                  required
-                ></textarea>
-              </div>
-              <p style="font-family: cursive">
-                *Pastikan Sertakan No.Telpon pada pesanan
-              </p>
+            <div class="heading-section ftco-animate text-center">
+              <span class="subheading">Order</span>
+              <br />
+              <h2 class="mb-4 text-dark" style="font-size: 2rem">Your Cake</h2>
+              <ul
+                class="ftco-footer-social list-unstyled float-md-left float-lft mt-3"
+              >
+                <li class="ftco-animate">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61550546151060"
+                    ><span class="fa fa-facebook"></span
+                  ></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="https://api.whatsapp.com/send/?phone=6285247422055"
+                    ><span class="fa fa-whatsapp"></span
+                  ></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="https://www.instagram.com/rissa.nurbiyanti/"
+                    ><span class="fa fa-instagram"></span
+                  ></a>
+                </li>
+              </ul>
             </div>
-            <div class="modal-footer d-flex justify-content-center">
-              <button type="submit" class="btn btn-outline-danger">
-                Send <i class="fa-solid fa-paper-plane"></i>
-              </button>
-            </div>
-          </form>
+            <form
+              target="_blank"
+              action="https://formsubmit.co/bbda2e33df65a6d1b1cbd316fdd55220"
+              method="POST"
+            >
+              <div class="modal-body mx-3">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Alamat Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama</label>
+                  <input
+                    type="text"
+                    id="Name"
+                    class="form-control"
+                    placeholder="Nama"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="Message" class="form-label">Detail Pesan</label>
+                  <textarea
+                    class="form-control"
+                    id="Message"
+                    name="message"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+                <p style="font-family: cursive">
+                  *Pastikan Sertakan No.Telpon pada pesanan
+                </p>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="submit" class="btn btn-outline-danger">
+                  Send <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4 ftco-animate p-4 px-md-2 pb-md-2">
+            <img src="./images/tentang_kami2.jpg" class="gambarform" />
+          </div>
         </div>
-        <div class="col-md-4 ftco-animate p-4 px-md-2 pb-md-2">
-          <img src="./images/tentang_kami2.jpg" class="gambarform" />
-        </div>
-      </div>
+      </section>
     </section>
     <!-- Temukan kami -->
     <section
@@ -1168,19 +1225,26 @@
                 acara spesial anda." <br /><br /><br />
                 dapurbrinara@gmail.com
                 <br />
-                8888888888
+                +6285247422055
               </p>
               <ul
                 class="ftco-footer-social list-unstyled float-md-left float-lft mt-3"
               >
                 <li class="ftco-animate">
-                  <a href="#"><span class="fa fa-facebook"></span></a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61550546151060"
+                    ><span class="fa fa-facebook"></span
+                  ></a>
                 </li>
                 <li class="ftco-animate">
-                  <a href="#"><span class="fa fa-whatsapp"></span></a>
+                  <a href="https://api.whatsapp.com/send/?phone=6285247422055"
+                    ><span class="fa fa-whatsapp"></span
+                  ></a>
                 </li>
                 <li class="ftco-animate">
-                  <a href="#"><span class="fa fa-instagram"></span></a>
+                  <a href="https://www.instagram.com/rissa.nurbiyanti/"
+                    ><span class="fa fa-instagram"></span
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -1269,17 +1333,7 @@
       </a>
     </p>
 
-    <script>
-      var nav = document.querySelector("nav");
-
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 100) {
-          nav.classList.add("bg-dark", "light");
-        } else {
-          nav.classList.remove("bg-dark", "light");
-        }
-      });
-    </script>
+    <script></script>
     <script src="https://cdn.jsdelivr.net/gh/ramjakaperdana23/gamelab-cdn/js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/ramjakaperdana23/gamelab-cdn/js/jquery-migrate-3.0.1.min.js"></script>
     <script

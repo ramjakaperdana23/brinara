@@ -266,3 +266,20 @@ jQuery(window).on('load', function () {
 
   }
 });
+
+function myFunction(id1,id2,id3) {
+  var dots = document.getElementById(id1);
+  var moreText = document.getElementById(id2);
+  var btnText = document.getElementById(id3);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "contents";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "contents";
+  }
+}
+

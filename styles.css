@@ -153,6 +153,17 @@ body {
   display: inline-block;
 }
 
+.font-descriptive {
+  font-family: "Poppins", cursive;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: "Poppins", cursive;
+}
+
 /* partner  */
 .partner {
   background-color: #fcfafa;
@@ -475,11 +486,14 @@ body {
 .testimony-wrap {
   display: block;
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 0 20px;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(0px) saturate(152%);
+  -webkit-backdrop-filter: blur(0px) saturate(152%);
+  background-color: rgba(24, 24, 31, 0.73);
+  border-radius: 12px;
 }
 
 .testimony-wrap .text p {
@@ -764,6 +778,10 @@ body {
 
 .dish-info ul li b {
   font-weight: 600;
+}
+
+.more {
+  display: none;
 }
 
 .dish-info,
@@ -1142,23 +1160,6 @@ a:focus {
     overflow-x: auto;
   }
 
-  .menu-tab::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100px;
-    height: 100%;
-    pointer-events: none;
-    opacity: 0.2;
-    border-radius: 0 60px 60px 0;
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-  }
-
   .menu-tab ul::-webkit-scrollbar {
     height: 0;
   }
@@ -1456,4 +1457,13 @@ a:focus {
   position: revert;
   display: flex;
   justify-content: center;
+}
+
+.ftco-counter .text strong.number {
+  font-size: 35px;
+  color: #dc3545;
+  line-height: 1;
+}
+.ftco-counter .text span {
+  font-size: 12px;
 }
