@@ -796,8 +796,9 @@ body {
 }
 
 .dist-bottom-row ul li {
-  display: flex;
+  /* display: flex; */
   align-items: center;
+  list-style: none;
 }
 
 .dist-bottom-row ul li b {
@@ -1172,16 +1173,18 @@ a:focus {
 
 @media (max-width: 760px) {
   .partner-brand {
-    flex-direction: column;
-    width: 50%;
+    flex-direction: row;
+    width: 110%;
+    gap: 30px;
   }
 
   .partner-brand img {
-    width: 80%;
+    width: 100%;
   }
 
   .partner-wrapper {
     justify-content: space-evenly;
+    flex-direction: column;
   }
 
   .big-font {
@@ -1235,6 +1238,12 @@ a:focus {
     max-width: 340px;
     margin: 80px auto 30px;
     padding: 0 0 30px;
+  }
+
+  .partner-brand {
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
   }
 }
 
@@ -1378,6 +1387,12 @@ a:focus {
 }
 
 @media (max-width: 300px) {
+  .partner-brand {
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+  }
+
   .gambarform {
     height: auto;
     width: 100%;
