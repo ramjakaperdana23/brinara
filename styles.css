@@ -919,7 +919,7 @@ a:focus {
 }
 
 #faq img {
-  filter: brightness(50%);
+  filter: brightness(100%);
 }
 
 .sec-wp {
@@ -1366,7 +1366,7 @@ a:focus {
   .carousel,
   .item,
   .active {
-    height: 100%;
+    height: auto;
   }
 
   .carousel-item img {
