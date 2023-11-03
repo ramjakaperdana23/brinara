@@ -243,19 +243,23 @@ body {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
   font-family: "Great Vibes", cursive;
   color: #dc3545;
   font-size: 3em;
 }
 
 .typing-text {
+  border-right: 3px solid;
+}
+.typing-text1 {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+}
+.center-testi {
+  justify-content: center;
 }
 
 @keyframes typing {
@@ -326,6 +330,10 @@ body {
   margin-top: 1rem;
 }
 
+.space-desktop {
+  margin-top: 2rem;
+}
+
 /* Tentang Kami  Akhir */
 
 /* Testimonial */
@@ -367,6 +375,7 @@ body {
 
 .ftco-counter .block-18 {
   display: block;
+  text-align: center;
   width: 100%;
 }
 

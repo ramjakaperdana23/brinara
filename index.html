@@ -220,20 +220,24 @@
       class="testimony-section img repeat-img"
     >
       <div id="Tentang_Kami" class="container mt-md-5 mt-sm-2">
-        <div class="d-flex row align-items-center gambar" data-aos="fade-right">
+        <div
+          class="d-flex row align-items-center gambar justify-content-center"
+          data-aos="fade-right"
+        >
           <img
             src="./images/tentang_kami3.png"
             class="rounded-sm my-img col-lg-6 col-sm-12"
           />
           <div class="col-lg-6 col-sm-12 paragraf wrapper-ttk">
             <div class="container">
-              <h1 class="typing-demo typing-jdl">Tentang Kami</h1>
+              <h1 class="typing-jdl">Tentang Kami</h1>
               <br />
               <br />
-              <span class="text first-text typing-demo1 typing-text"
+              <span
+                class="text first-text typing-demo1 typing-text typing-text1"
                 >Selamat datang di Brinara</span
               >, <br />
-              <span class="typing-demo2 typing-text"
+              <span class="typing-text1"
                 >destinasi kue pilihan di Madiun!
               </span>
               <br />
@@ -262,8 +266,8 @@
         id="section-counter"
       >
         <div class="container">
-          <div class="row d-md-flex">
-            <div class="col-md-9">
+          <div class="row d-md-flex center-testi">
+            <div class="col-md-12">
               <div class="row d-md-flex align-items-center">
                 <div
                   class="col-3 col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate"
@@ -307,7 +311,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 text-center text-md-left">
+            <div
+              class="col-md-6 text-center text-md-left test space-desktop"
+              style="justify-content: center"
+            >
               <p data-aos="fade-up" data-aos-duration="9000">
                 Berbagai pelanggan puas dengan hasil kami, dan kami bertekad
                 untuk terus berinovasi dengan rasa dan peningkatan pelayanan.
@@ -567,11 +574,24 @@
                   <div class="dist-bottom-row">
                     <ul>
                       <li>
-                        Nikmati jajanan pasar kami dan rasakan cita rasa
-                        tradisional Indonesia yang tak lekang oleh waktu.
+                        Selamat datang di tempat kami, di mana Anda bisa
+                        merasakan nikmatnya jajanan pasar khas Indonesia yang
+                        <span id="dots3">...</span
+                        ><span class="more" id="more3">
+                          menuju masa lalu yang kaya dengan rasa dan tradisi.
+                          telah diwariskan dari generasi ke generasi. Setiap
+                          gigitan adalah perjalanan
+                        </span>
                       </li>
                     </ul>
                   </div>
+                  <button
+                    class="btn btn-danger"
+                    onclick="myFunction('dots3','more3','myBtn3')"
+                    id="myBtn3"
+                  >
+                    Read more
+                  </button>
                 </div>
               </div>
 
@@ -904,7 +924,7 @@
             style="justify-content: center"
             data-aos="fade-right"
           >
-            <div class="col-md-10">
+            <div class="col-md-7">
               <div
                 class="panel-group"
                 id="accordion"
